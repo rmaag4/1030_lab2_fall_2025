@@ -1,0 +1,464 @@
+/* General Styles */
+body {
+    background: linear-gradient(to bottom, black, orange, black);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: orange;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: black;
+    color: orange;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(255, 165, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(255, 145, 0);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    nav {
+        padding: 10px;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    nav ul li {
+        flex: 0 0 auto;
+        margin: 0 8px;
+    }
+
+    nav ul li a {
+        font-size: 0.8em;
+        padding: 5px 8px;
+    }
+
+    nav ul::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://tse2.mm.bing.net/th/id/OIP.d1Un0tY6q1QpETSd5NTbYQHaCv?rs=1&pid=ImgDetMain&o=7&rm=3');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.hero-banner {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.55);
+    padding: 60px 20px;
+    box-sizing: border-box;
+}
+
+.hero-text {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+    text-align: center;
+    color: orange;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: orange;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: orange;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: orange;
+}
+
+.hero-text button {
+    background-color: black;
+    color: orange;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-text button:hover {
+    background-color: orange;
+    color: black;
+}
+
+.about-content {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about-content img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.5);
+}
+
+/* About Section */
+#about {
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, orange, black);
+    text-align: center;
+    color: black;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+#about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: rgb(0, 0, 0);
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Tickets Section */
+#tickets {
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, black, orange, black);
+    text-align: center;
+    color: black;
+}
+
+#tickets h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#tickets button {
+    background-color: black;
+    color: orange;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#tickets button:hover {
+    background-color: orange;
+    color: black;
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px 20px;
+    background: linear-gradient(to top, black, orange, black);
+    text-align: center;
+    color: orange;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 165, 0, 0.5);
+}
+
+#contact form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: orange;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: black;
+    color: orange;
+}
+
+#contact form button {
+    background-color: orange;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact form button:hover {
+    background-color: black;
+    color: orange;
+}
+
+#contact .contact-box-text {
+    max-width: 900px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 2px solid orange;
+    border-radius: 12px;
+    text-align: center;
+}
+
+#contact .contact-box-text p {
+    color: orange;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+/* FAQ Section */
+#faq {
+    background-color: white;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+#faq h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+#faq p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.faq-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.faq-item p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: black;
+}
+
+/* Directions Section */
+#directions {
+    background: linear-gradient(to bottom, black, orange, black);
+    padding: 40px 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+#directions h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: rgb(255, 166, 0);
+}
+
+#directions h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: orange;
+}
+
+#directions p {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.direction-item {
+    margin: 20px auto;
+    padding: 20px;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 900px;
+}
+
+.direction-item h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.direction-item p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: black;
+}
+
+#directions img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery Section */
+#gallery {
+    background: linear-gradient(to bottom, black, orange, black);
+    padding: 40px 20px;
+    text-align: center;
+    color: orange;
+}
+
+#gallery h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: orange;
+}
+
+#gallery p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: orange;
+}
+
+.gallery-grid {
+    display: grid;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.gallery-row {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(180px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery-row.center-row {
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    .gallery-row {
+        grid-template-columns: repeat(3, minmax(150px, 1fr));
+    }
+
+    .gallery-row.center-row {
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .gallery-row,
+    .gallery-row.center-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: orange;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: blue;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
